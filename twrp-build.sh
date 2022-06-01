@@ -7,7 +7,7 @@ git config --global user.email "100Daisy@protonmail.com"
 git config --global user.name "GitDaisy"
 git config --global color.ui false
 # Sync the source
-repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
+repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
 repo sync  -f --force-sync --no-clone-bundle --no-tags -j$(nproc --all)
 # Clone device tree and common tree
 git clone --depth=1 https://github.com/100Daisy/android_device_motorola_fiji -b master device/motorola/fiji
